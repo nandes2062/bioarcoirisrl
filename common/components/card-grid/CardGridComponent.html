@@ -1,0 +1,37 @@
+<article class="shadow-lg rounded bg-white border border-gray-200">
+  <a href="#" class="flex flex-wrap justify-center items-center content-center relative p-4 aspect-square">
+    <img
+      v-if="combo"
+      v-for="item in combo"
+      :src="item.image"
+      :alt="item.name"
+      class="w-[6rem] rounded-full -m-3"
+    >
+    <img v-else :src="image" class="mx-auto lg:max-w-[8rem] max-w-[7rem] rounded-full" height="240" alt="">
+  </a>
+  <div class="p-4 border-t border-t-gray-200 mx-auto text-center">
+    <h3 class=" text-blue-600 font-semibold text-lg text-center mb-1 leading-5">
+      <span class="inline">{{ name }}<span v-if="combo"><span v-for="(c, i) in combo">{{ c.name }}<span v-show="combo.length - 1 > i">, </span></span ></span></span> <span class="inline-block text-amber-600">{{ duration }}</span>
+    </h3>
+    <h4>{{ quantity }} {{ categoryCalculed }}</h4>
+    <h4 class="text-xl font-bold mb-2">{{ price[0].prefix }} {{ priceCalculed }}</h4>
+    <QuantityInput v-if="!combo" :modelValue="quantity" @update:modelValue="changeQuantity" :max="quantityLimit"></QuantityInput>
+    <div class="flex justify-center mt-4">
+      <button type="button"  @click="changeOpenBuy(true)" class="w-9 h-9 py-2 inline-flex justify-center items-center text-blue-600 text-center border-2 border-blue-600 rounded-full hover:border-dotted flex-none" href="#">
+        <info-icon class="w-3.5 mr-1 text-xs text-blue-700"></info-icon>
+      </button>
+      <span class="px-1"></span>
+      <div class="block text-center">
+        <a
+         class="px-3 py-1 flex items-center bg-blue-600 text-center border-2 text-white rounded-3xl hover:border-dotted h-10"
+         :href="whatsappMessage"
+         target="_blank"
+        >
+          <WhatsappIcon class="w-5 mr-2"></WhatsappIcon>
+          <span class="text-sm">Solicitar</span>
+        </a>
+        <p class="text-xs opacity-40">Via Whatsapp</p>
+      </div>
+    </div>
+  </div>
+</article>

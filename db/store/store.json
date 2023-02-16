@@ -1,0 +1,982 @@
+[
+  {
+    "image": "/images/MAGISTV.jpeg",
+    "name": "MAGIS TV",
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "CUENTA",
+    "devices": 3,
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 60,
+        "discountQuantity": 2
+      }
+    ]
+  },
+  {
+    "image": "/images/NETFLIX.png",
+    "name": "Netflix",
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 22,
+        "discountQuantity": 2
+      }
+    ]
+  },
+  {
+    "image": "/images/NETFLIX.png",
+    "name": "Netflix",
+    "duration": "28 a 30 días",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "CUENTA",
+    "devices": 4,
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      { 
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 85,
+        "discountQuantity": 2
+      }
+    ]
+  },
+  {
+    "image": "/images/DISNEY.png",
+    "name": "Disney Plus",
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 10,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "image": "/images/DISNEY.png",
+    "name": "Disney Plus",
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "CUENTA",
+    "devices": 4,
+    "quantity": 1,
+    "quantityLimit": 10,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 25,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "image": "/images/hbo.webp",
+    "name": "HBO Max",
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 10,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "image": "/images/hbo.webp",
+    "name": "HBO Max",
+    "duration": "3 Meses",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 25,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "image": "/images/hbo.webp",
+    "name": "HBO Max",
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "CUENTA",
+    "devices": 3,
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 25,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "image": "/images/hbo.webp",
+    "name": "HBO Max",
+    "duration": "3 Meses",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "CUENTA",
+    "devices": 3,
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 60,
+        "discountQuantity": 2
+      }
+    ]
+  },
+  {
+    "image": "/images/PRIME-VIDEO.png",
+    "name": "Prime video",
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "PERFIL",
+    "quantity": 1,
+    "quantityLimit": 3,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 10,
+        "discountQuantity": 1
+      }
+    ]
+  },
+  {
+    "image": "/images/PRIME-VIDEO.png",
+    "name": "Prime video",
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "CUENTA",
+    "devices": 3,
+    "quantity": 1,
+    "quantityLimit": 10,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 22,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "image": "/images/PRIME-VIDEO.png",
+    "name": "Prime video",
+    "duration": "3 Meses",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "CUENTA",
+    "devices": 3,
+    "quantity": 1,
+    "quantityLimit": 10,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 55,
+        "discountQuantity": 2
+      }
+    ]
+  },
+  {
+    "image": "/images/CRUNCHYROLL.jpg",
+    "name": "Crunchyroll",
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado, 3 dispositivos</li></ul>",
+    "category": "CUENTA",
+    "devices": 3,
+    "quantity": 1,
+    "quantityLimit": 10,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 20,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "image": "/images/CRUNCHYROLL.jpg",
+    "name": "Crunchyroll",
+    "duration": "3 Meses",
+    "sumary": "<ul><li>Garantizado 3 dispositivos</li></ul>",
+    "category": "CUENTA",
+    "devices": 3,
+    "quantity": 1,
+    "quantityLimit": 10,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 50,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "image": "/images/paramount.png",
+    "name": "Paramount",
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 11,
+        "discountQuantity": 1
+      }
+    ]
+  },
+  {
+    "image": "/images/paramount.png",
+    "name": "Paramount",
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "CUENTA",
+    "devices": 3,
+    "quantity": 1,
+    "quantityLimit": 10,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 20,
+        "discountQuantity": 1
+      }
+    ]
+  },
+  {
+    "image": "/images/SPOTYFY.png",
+    "name": "Spotify",
+    "duration": "1 Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "CUENTA",
+    "devices": 1,
+    "quantity": 1,
+    "quantityLimit": 10,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 18,
+        "discountQuantity": 1
+      }
+    ]
+  },
+  {
+    "image": "/images/SPOTYFY.png",
+    "name": "Spotify",
+    "duration": "3 Meses",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "CUENTA",
+    "devices": 1,
+    "quantity": 1,
+    "quantityLimit": 10,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 26,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "image": "/images/YOUTUBE-PREMIUM.png",
+    "name": "Youtube Premium",
+    "duration": "4 Meses",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "CUENTA",
+    "devices": 1,
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 28,
+        "discountQuantity": 1
+      }
+    ]
+  },
+  {
+    "image": "/images/STARPLUS.jpg",
+    "name": "Start +",
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "PERFIL",
+    "quantity": 1,
+    "quantityLimit": 3,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 19,
+        "discountQuantity": 1
+      }
+    ]
+  },
+  {
+    "image": "/images/STARPLUS.jpg",
+    "name": "Start +",
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "CUENTA",
+    "devices": 2,
+    "quantity": 1,
+    "quantityLimit": 3,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 35,
+        "discountQuantity": 2
+      }
+    ]
+  },
+  {
+    "image": "/images/VIXPLUS.jpeg",
+    "name": "VIX +",
+    "duration": "28 a 30 días",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "CUENTA",
+    "devices": 3,
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 28,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "image": "/images/PLEX.png",
+    "name": "PLEX",
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "CUENTA",
+    "devices": 3,
+    "quantity": 1,
+    "quantityLimit": 8,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 35,
+        "discountQuantity": 2
+      }
+    ]
+  },
+  {
+    "image": "/images/PLEX.png",
+    "name": "PLEX",
+    "duration": "2 Meses",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "CUENTA",
+    "devices": 3,
+    "quantity": 1,
+    "quantityLimit": 8,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 60,
+        "discountQuantity": 2
+      }
+    ]
+  },
+  {
+    "image": "/images/tele-latino.jpg",
+    "name": "Tele Latino",
+    "duration": "1 Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "CUENTA",
+    "devices": 3,
+    "quantity": 1,
+    "quantityLimit": 8,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 24,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/NETFLIX.png",
+        "name": "Netflix"
+      },
+      {
+        "image": "/images/DISNEY.png",
+        "name": "Disney Plus"
+      },
+      {
+        "image": "/images/hbo.webp",
+        "name": "HBO Max"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 38,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/NETFLIX.png",
+        "name": "Netflix"
+      },
+      {
+        "image": "/images/DISNEY.png",
+        "name": "Disney Plus"
+      },
+      {
+        "image": "/images/PRIME-VIDEO.png",
+        "name": "Prime video"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 38,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+
+  {
+    "combo": [
+      {
+        "image": "/images/NETFLIX.png",
+        "name": "Netflix"
+      },
+      {
+        "image": "/images/hbo.webp",
+        "name": "HBO Max"
+      },
+      {
+        "image": "/images/PRIME-VIDEO.png",
+        "name": "Prime video"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 38,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+
+  {
+    "combo": [
+      {
+        "image": "/images/DISNEY.png",
+        "name": "Disney Plus"
+      },
+      {
+        "image": "/images/hbo.webp",
+        "name": "HBO Max"
+      },
+      {
+        "image": "/images/PRIME-VIDEO.png",
+        "name": "Prime video"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 27,
+        "discountQuantity": 1
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/NETFLIX.png",
+        "name": "Netflix"
+      },
+      {
+        "image": "/images/DISNEY.png",
+        "name": "Disney Plus"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 30,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/NETFLIX.png",
+        "name": "Netflix"
+      },
+      {
+        "image": "/images/hbo.webp",
+        "name": "HBO Max"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 30,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/NETFLIX.png",
+        "name": "Netflix"
+      },
+      {
+        "image": "/images/PRIME-VIDEO.png",
+        "name": "Prime video"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 30,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/NETFLIX.png",
+        "name": "Netflix"
+      },
+      {
+        "image": "/images/paramount.png",
+        "name": "Paramount"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 30,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/NETFLIX.png",
+        "name": "Netflix"
+      },
+      {
+        "image": "/images/STARPLUS.jpg",
+        "name": "Start +"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 40,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/DISNEY.png",
+        "name": "Disney Plus"
+      },
+      {
+        "image": "/images/hbo.webp",
+        "name": "HBO Max"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 19,
+        "discountQuantity": 1
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/DISNEY.png",
+        "name": "Disney Plus"
+      },
+      {
+        "image": "/images/PRIME-VIDEO.png",
+        "name": "Prime video"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 19,
+        "discountQuantity": 1
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/DISNEY.png",
+        "name": "Disney Plus"
+      },
+      {
+        "image": "/images/paramount.png",
+        "name": "Paramount"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 19,
+        "discountQuantity": 1
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/DISNEY.png",
+        "name": "Disney Plus"
+      },
+      {
+        "image": "/images/STARPLUS.jpg",
+        "name": "Start +"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 28,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/hbo.webp",
+        "name": "HBO Max"
+      },
+      {
+        "image": "/images/PRIME-VIDEO.png",
+        "name": "Prime video"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 19,
+        "discountQuantity": 1
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/hbo.webp",
+        "name": "HBO Max"
+      },
+      {
+        "image": "/images/paramount.png",
+        "name": "Paramount"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 20,
+        "discountQuantity": 1
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/hbo.webp",
+        "name": "HBO Max"
+      },
+      {
+        "image": "/images/STARPLUS.jpg",
+        "name": "Start +"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 28,
+        "discountQuantity": 1.5
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/PRIME-VIDEO.png",
+        "name": "Prime video"
+      },
+      {
+        "image": "/images/paramount.png",
+        "name": "Paramount"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 20,
+        "discountQuantity": 1
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/PRIME-VIDEO.png",
+        "name": "Prime video"
+      },
+      {
+        "image": "/images/STARPLUS.jpg",
+        "name": "Start +"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 28,
+        "discountQuantity": 1
+      }
+    ]
+  },
+  {
+    "combo": [
+      {
+        "image": "/images/paramount.png",
+        "name": "Paramount"
+      },
+      {
+        "image": "/images/STARPLUS.jpg",
+        "name": "Start +"
+      }
+    ],
+    "duration": "Un Mes",
+    "sumary": "<ul><li>Garantizado</li></ul>",
+    "category": "COMBO-PERFIL",
+    "quantity": 1,
+    "quantityLimit": 4,
+    "openBuy": false,
+    "priceUnit": [
+      {
+        "code": "BOB",
+        "prefix": "Bs.",
+        "value": 28,
+        "discountQuantity": 1
+      }
+    ]
+  }
+]

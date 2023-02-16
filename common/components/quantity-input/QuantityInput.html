@@ -1,0 +1,26 @@
+<div class="flex items-center mb-2 w-full justify-center">
+  <button @click="decrement" type="button" class="bg-green-600 rounded-md w-8 p-1">
+    <MinusIcon class="text-white"></MinusIcon>
+  </button>
+  <!-- <input
+    type="text"
+    :value="modelValue"
+    @input="inputChange"
+    class="bg-slate-500 bg-opacity-30 px-2 py-1 rounded-md mx-2 text-center"
+    size="1"
+    maxlength="2"
+    :placeholder="modelValue"
+  > -->
+  <input
+    type="text"
+    :value="modelValue"
+    class="bg-slate-500 bg-opacity-30 px-2 py-1 rounded-md mx-2 text-center"
+    size="1"
+    maxlength="2"
+    :placeholder="modelValue"
+    readonly
+  >
+  <button @click="increment" type="button" class=" bg-green-600 rounded-md w-8 p-1">
+    <PlusIcon class="text-white"></PlusIcon>
+  </button>
+</div>

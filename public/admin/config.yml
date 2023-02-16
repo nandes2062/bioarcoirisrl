@@ -1,0 +1,67 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: "public/image/uploads" # Media files will be stored in the repo under static/image/uploads
+public_folder: "/image/uploads" # The src attribute for uploaded media will begin with /image/uploads
+collections:
+  - name: "nuestro-equipo"
+    label: "Nuestro equipo"
+    description: ""
+    files:
+      - label: "Nuestro Equipo"
+        name: "NuestroEquipo"
+        file: "content/nuestro-equipo/nuestro-equipo.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Nuestro Equipo"
+            name: "nuestro-equipo"
+            widget: "list"
+            fields:
+              - { label: "Foto", name: "image", widget: "image" }
+              - { label: "Nombre", name: "name", widget: "string" }
+              - { label: "Cargo", name: "position", widget: "string" }
+              - { label: "Descripcion", name: "description", widget: "string" }
+  - name: "nuestras-marcas"
+    label: "Nuestras marcas"
+    description: ""
+    files:
+      - label: "Nuestras marcas"
+        name: "NuestrasMarcas"
+        file: "content/nuestras-marcas/nuestras-marcas.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Nuestras marcas"
+            name: "nuestras-marcas"
+            widget: "list"
+            fields:
+              - { label: "Logo", name: "image", widget: "image" }
+              - { label: "title", name: "title", widget: "string" }
+  - label: 'Categorías'
+    name: 'categories'
+    folder: "content/category" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    format: 'json'
+    editor:
+      preview: false
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Description, name: description, widget: string, required: false}
+  - name: "catalogo" # Used in routes, e.g., /admin/collections/blog
+    label: "Catalogo" # Used in the UI
+    folder: "content/catalogo" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    format: 'json'
+    editor:
+      preview: false
+    sort: "date:desc" # Default is title:asc
+    fields: # The fields for each document, usually in front matter
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Fecha de publicación", name: "date", widget: "datetime", format: "DD MM YYYY hh:mm:ss"}
+      - {label: "Imagen", name: "image", widget: "image", required: false}
+      - {label: "Categoría", name: "category", widget: "relation", collection: "categories", searchFields: ["title"], valueField: "title", displayFields: ["title"], required: false}
+      - {label: "Descripcion corta", name: "shortdescription", widget: "text"}
+      - {label: "Descripción larga", name: "description", widget: "markdown", required: false}

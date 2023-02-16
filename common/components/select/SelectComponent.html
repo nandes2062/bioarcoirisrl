@@ -1,0 +1,20 @@
+<div>
+  <button
+    type="button"
+    class="text-sm border-2 border-blue-500 rounded-md w-full flex justify-between items-center px-2 py-1"
+    @click="isOpen = !isOpen"
+    @blur="isOpen = false"
+  >
+    <span>
+      <slot></slot>
+    </span>
+    <ArrowIcon
+      class="flex-none w-5 text-blue-600 transform transition-transform"
+      :class="isOpen ? 'rotate-0' : 'rotate-180'"
+    ></ArrowIcon>
+  </button>
+  <ul v-show="isOpen" class="">
+    <li>Hola</li>
+    <li>Hola2</li>
+  </ul>
+</div>
