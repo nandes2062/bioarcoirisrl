@@ -1,10 +1,10 @@
-<header class="bg-white py-3 border-b sticky top-0">
+<header class="bg-white py-3 border-b sticky top-0 z-20">
   <div class="mx-auto lg:px-5 px-4">
-    <div class="flex flex-wrap items-center">
+    <div class="flex items-center">
       <!-- mobile-only -->
-      <div class="lg:hidden ml-2">
-        <button type="button" class="bg-white p-3 inline-flex items-center rounded-md text-black hover:bg-gray-200 hover:text-gray-800 border border-transparent">
-          MENÚ
+      <div class="lg:hidden ml-2 mr-2.5">
+        <button type="button" class="bg-white p-1.5 shadow inline-flex items-center rounded-md text-black hover:bg-gray-200 hover:text-gray-800 border border-transparent">
+          <BarsIcon class="w-6 h-5"></BarsIcon>
         </button>
       </div>
       <!-- mobile-only //end  -->
@@ -25,19 +25,38 @@
       </div> -->
       <!-- Search .//end -->
 
-      <div class="flex items-center space-x-2 ml-auto">
+      <div class="lg:flex items-center space-x-2 ml-auto hidden">
         <span class="relative inline-flex">
-          <button @click="showCart" type="button" class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-green-500 bg-white dark:bg-slate-800 transition ease-in-out duration-150 ring-1 ring-slate-900/10 dark:ring-slate-200/20">
-            <CartIcon class="w-6 h-6 mr-2"></CartIcon>
+          <button @click="showCart" type="button" class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm hover:shadow rounded-md text-green-500 bg-white transition ease-in-out duration-150">
             Inicio
+          </button>
+        </span>
+        <span class="relative inline-flex">
+          <button @click="showCart" type="button" class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm hover:shadow rounded-md text-green-500 bg-white transition ease-in-out duration-150">
+            Empresa
+          </button>
+        </span>
+        <span class="relative inline-flex">
+          <button @click="showCart" type="button" class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm hover:shadow rounded-md text-green-500 bg-white transition ease-in-out duration-150">
+            Catálogo
+          </button>
+        </span>
+        <span class="relative inline-flex">
+          <button @click="showCart" type="button" class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm hover:shadow rounded-md text-green-500 bg-white transition ease-in-out duration-150">
+            Noticias
+          </button>
+        </span>
+        <span class="relative inline-flex">
+          <button @click="showCart" type="button" class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm hover:shadow rounded-md text-green-500 bg-white transition ease-in-out duration-150">
+            Contáctenos
           </button>
         </span>
       </div>
       <!-- Actions -->
       <div class="flex items-center space-x-2 ml-auto">
-        <span class="relative inline-flex">
-          <button @click="showCart" type="button" class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-green-500 bg-white dark:bg-slate-800 transition ease-in-out duration-150 ring-1 ring-slate-900/10 dark:ring-slate-200/20">
-            <CartIcon class="w-6 h-6 mr-2"></CartIcon>
+        <span @click="showCart" class="relative inline-flex cursor-pointer">
+          <button type="button" class="inline-flex items-center lg:px-5 px-2.5 py-2 font-semibold leading-6 text-sm shadow rounded-md text-green-500 bg-white dark:bg-slate-800 transition ease-in-out duration-150 hover:ring-slate-200/20">
+            <CartIcon class="w-6 h-6"></CartIcon>
           </button>
           <span class="flex absolute h-5 w-5 top-0 right-0 -mt-1 -mr-1">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>

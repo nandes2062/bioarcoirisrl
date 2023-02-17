@@ -8,7 +8,7 @@
       <div class="p-4 border-t border-t-gray-200">
         <p class="font-semibold">$99.50</p>
         <a href="#" class="block text-gray-600 mb-3 hover:text-blue-500">
-          Sample name of the product just goes here
+          Sample 008698hg
         </a>
         <div class="flex justify-center">
           <button

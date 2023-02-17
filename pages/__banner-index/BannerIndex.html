@@ -1,23 +1,30 @@
-<section class="bg bg-green-500">
-  <div class="container max-w-screen-xl mx-auto px-4">
-    
-    <div class="pl-5 py-10 sm:py-20">
-      <article class="my-10">
-        <h1 class="text-3xl md:text-5xl text-white font-bold">
-          Best products &amp; <br>brands in our store
-        </h1>
-        <p class="text-lg text-white font-normal mt-4 mb-6">
-        Trendy Products, Factory Prices, Excellent Service
-        </p>
-        <div>
-          <a class="px-4 py-2 inline-block font-semibold bg-yellow-500 text-white border border-transparent rounded-md hover:bg-yellow-600" href="#">
-            Discover
-          </a>
-          <a class="px-4 py-2 inline-block font-semibold text-blue-600 border border-transparent rounded-md hover:bg-gray-100 bg-white" href="#">
-            Learn more
-          </a>
+<section class="bg bg-green-500 relative overflow-hidden">
+  <Carousel :autoplay="4000" :wrap-around="true">
+    <Slide v-for="slide in 10" :key="slide">
+      <img class="absolute object-cover object-center top-auto bottom-auto" src="slides/image4.jpg" alt="">
+      <div class="absolute w-full h-full bg-gradient-to-r to-green-500 via-transparent from-amber-800 opacity-40"></div>
+      <div class="relative container max-w-screen-xl mx-auto px-4">
+        <div class="pl-5 py-10 sm:py-20">
+          <article class="my-10">
+            <h1 class="text-3xl md:text-5xl text-white font-bold">
+              ARCOIRIS R.L. &amp; <br>COOPERATIVA MULTIACTIVA
+            </h1>
+            <p class="text-lg text-white font-normal mt-4 mb-6">
+              Empresa social y de servicio agroecológico, sostenible y amigable con el medio ambiente
+            </p>
+            <div>
+              <nuxt-link to="/" class="px-4 py-2 inline-block font-semibold bg-red-500 text-white border border-transparent rounded-md">
+                Leer más
+              </nuxt-link>
+            </div>
+          </article>
         </div>
-      </article>
-    </div>
-  </div> <!-- container //end -->
+      </div> <!-- container //end -->
+    </Slide>
+
+    <template #addons>
+      <Navigation />
+      <Pagination />
+    </template>
+  </Carousel>
 </section>

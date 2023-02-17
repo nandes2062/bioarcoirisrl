@@ -26,7 +26,7 @@
           <ul class="mb-3">
             <li class="flex justify-between pt-3"> 
               <span>Precio total:</span> 
-              <span class="text-gray-900 font-bold">$420.00</span>
+              <span class="text-gray-900 font-bold">Bs. 0.00</span>
             </li>
           </ul>
           <div class="border-t flex justify-center pt-4">

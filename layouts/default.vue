@@ -1,8 +1,8 @@
 <template>
-  <div id="COMBOS-DUO-&-TRIO">
-  <Header />
-  <slot></slot>
-  <Footer />
+  <div>
+    <Header />
+    <slot></slot>
+    <Footer />
   </div>
 </template>
 
