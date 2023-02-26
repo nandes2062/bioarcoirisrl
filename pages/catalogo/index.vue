@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum alias reiciendis, qui deserunt libero, dolorem veritatis itaque quas id est architecto eligendi laudantium nihil nostrum animi modi. Officia, ex consectetur?</p>
     <section class="bg-gray-100 py-12">
       <div class="container max-w-screen-xl mx-auto px-4">
         <h2 class="text-3xl font-bold mb-8">NUESTROS PRODUCTOS</h2>

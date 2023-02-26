@@ -21,7 +21,7 @@
       </div>
     </section>
     <section class="container mx-auto text-xl leading-9">
-      <div class="mb-16">
+      <div class="mb-16 max-w-6xl px-4 mx-auto">
         <h2 class="mb-6 flex justify-center lg:text-5xl text-4xl text-green-500 font-medium">
           ¿ QUE ES BIO ARCOIRIS R.L.? <img class=" ml-5 w-10 object-contain" src="/favicon.png"/>
         </h2>
@@ -30,7 +30,7 @@
 productores de café especial</b>.
         </p>
         <p></p>
-        <div class="flex flex-col mb-8 sm:flex-row">
+        <div class="flex flex-col mb-8 sm:flex-row text-base">
           <div class="flex items-center mb-8 md:w-5/12 sm:order-last sm:w-1/2">
             <img class="rounded-sm" src="/images/image8.jpg" alt="" />
           </div>
@@ -51,7 +51,7 @@ ecosistemas de importancia hídrica.
             </p>
           </div>
         </div>
-        <div class="flex flex-col mb-8 sm:flex-row">
+        <div class="flex flex-col mb-8 sm:flex-row text-base">
           <div class="flex items-center mb-8 md:w-5/12 sm:w-1/2">
             <img class="rounded-sm" src="/images/image10.jpg" alt="" />
           </div>
@@ -71,7 +71,7 @@ marca ARCOIRIS, en tostado y molido.
             </p>
           </div>
         </div>
-        <div class="flex flex-col mb-8 sm:flex-row">
+        <div class="flex flex-col mb-8 sm:flex-row text-base">
           <div class="flex items-center mb-8 md:w-5/12 sm:order-last sm:w-1/2">
             <img class="rounded-sm" src="/images/image9.jpg" alt="" />
           </div>

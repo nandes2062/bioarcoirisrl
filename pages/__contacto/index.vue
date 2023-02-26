@@ -4,14 +4,16 @@
     class="relative w-full lg:py-20 py-10 px-12"
   >
     <div class="relative z-10 text-center py-10 md:py-16">
-      <div class="w-24 h-2 bg-green-500 mb-4 mx-auto"></div>
+      <div class="w-24 h-2 bg-green-500 mb-4 mx-auto shadow-md"></div>
       <h1
         class="text-green-500 uppercase text-center text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading tracking-wider font-bold mb-6"
+        style="text-shadow: 1px 1px 1px green;"
       >
       Contáctanos
       </h1>
       <p
         class="text-white mb-10 text-base md:text-lg font-heading tracking-wider font-base max-w-screen-md mx-auto"
+        style="text-shadow: 1px 1px 1px green;"
       >
       Comunícate con nosotros, estaremos encantados de atenderte
       </p>
