@@ -6,9 +6,9 @@
         <img src="@/images/image-disabled.jpg" class="mx-auto w-auto" height="240" alt="Product title here">
       </a>
       <div class="p-4 border-t border-t-gray-200">
-        <p class="font-semibold">$99.50</p>
+        <p class="font-semibold">Bs. 0.00</p>
         <a href="#" class="block text-gray-600 mb-3 hover:text-blue-500">
-          Sample 008698hg
+          Sample
         </a>
         <div class="flex justify-center">
           <button
