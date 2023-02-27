@@ -3,7 +3,7 @@
     <!-- COMPONENT: PRODUCT CARD -->
     <article class="shadow-sm rounded bg-white border border-gray-200">
       <a href="#" class="block p-1">
-        <img src="@/images/image-disabled.jpg" class="mx-auto w-auto" height="240" alt="Product title here">
+        <img src="/images/image-disabled.jpg" class="mx-auto w-auto" height="240" alt="Product title here">
       </a>
       <div class="p-4 border-t border-t-gray-200">
         <p class="font-semibold">Bs. 0.00</p>
