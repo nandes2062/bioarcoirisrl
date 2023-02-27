@@ -7,7 +7,7 @@
         <CloseIcon @click="close" class="w-6 h-6 absolute stroke-white right-0 mr-4 text-white"></CloseIcon>
       </header>
       <main v-if="props.cart.length > 0" class="text-sm px-4 py-3 h-[calc(100vh-17.5rem)] overflow-auto">
-        <div>
+        <div class="flex justify-between mb-4">
           <p>Total de productos</p>
           <button>Vaciar carro</button>
         </div>

@@ -1,22 +1,25 @@
 <section class="bg bg-green-500 relative overflow-hidden">
   <Carousel :autoplay="4000" :wrap-around="true">
-    <Slide v-for="slide in 10" :key="slide">
-      <img class="absolute object-cover object-center top-auto bottom-auto" src="slides/image4.jpg" alt="">
+    <Slide v-for="(slide, id) in slides" :key="id">
+      <nuxt-img class="absolute w-full h-full object-cover object-center top-auto bottom-auto" :src="slide.image" :alt="slide.title"></nuxt-img>
       <div class="absolute w-full h-full bg-gradient-to-r to-green-500 via-transparent from-amber-800 opacity-40"></div>
       <div class="relative container max-w-screen-xl mx-auto px-4">
         <div class="pl-5 py-10 sm:py-20">
-          <article class="my-10">
+          <article class="my-10 text-left">
             <h1 class="text-3xl md:text-5xl text-white font-bold">
-              ARCOIRIS R.L. &amp; <br>COOPERATIVA MULTIACTIVA
+              {{ slide.title }}
             </h1>
+            <h2 class="text-2xl md:text-4xl text-white font-bold">
+              {{ slide.subtitle }}
+            </h2>
             <p class="text-lg text-white font-normal mt-4 mb-6">
-              Empresa social y de servicio agroecológico, sostenible y amigable con el medio ambiente
+              {{ slide.description }}
             </p>
-            <div>
+            <!-- <div>
               <nuxt-link to="/" class="px-4 py-2 inline-block font-semibold bg-red-500 text-white border border-transparent rounded-md">
                 Leer más
               </nuxt-link>
-            </div>
+            </div> -->
           </article>
         </div>
       </div> <!-- container //end -->

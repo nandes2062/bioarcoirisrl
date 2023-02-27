@@ -1,46 +1,46 @@
 {
   "slides": [
     {
-      "title": "",
-      "description": "",
-      "image": "",
-      "url_button": ""
+      "title": "BIO - ARCOIRIS R.L.",
+      "subtitle": "COOPERATIVA MULTIACTIVA",
+      "description": "Empresa social y de servicio agroecológico, sostenible y amigable con el medio ambiente",
+      "image": "/slides/image3.jpg",
+      "url_button": "#Empresa"
     },
     {
-      "title": "",
+      "title": "PRODUCCIÓN DE CAFÉ",
+      "subtitle": "ORGANICO ESPECIAL",
       "description": "",
-      "image": "",
-      "url_button": ""
+      "image": "/slides/image23.jpg",
+      "url_button": "#Empresa"
     },
     {
-      "title": "",
+      "title": "ASISTENCIA TÉCNICA",
+      "subtitle": "PARA LA OBTENCIÓN DE CAFÉ ESPECIAL",
       "description": "",
-      "image": "",
-      "url_button": ""
+      "image": "/slides/image37.jpg",
+      "url_button": "#Empresa"
     },
     {
-      "title": "",
+      "title": "SISTEMA DE ACOPIO",
+      "subtitle": "BIO - ARCOIRIS R.L.",
       "description": "",
-      "image": "",
-      "url_button": ""
+      "image": "/slides/image5.jpg",
+      "url_button": "#Empresa"
     },
     {
-      "title": "",
+      "title": "CONTROL DE CALIDAD DE CAFÉ",
+      "subtitle": "ANALISIS SENSORIAL",
       "description": "",
-      "image": "",
-      "url_button": ""
+      "image": "/slides/image52.jpg",
+      "url_button": "#Empresa"
     },
     {
-      "title": "",
+      "title": "ALMACENADO Y EMPACADO",
+      "subtitle": "ÁREA DE COMERCIALIZACIÓN",
       "description": "",
-      "image": "",
-      "url_button": ""
-    },
-    {
-      "title": "",
-      "description": "",
-      "image": "",
-      "url_button": ""
+      "image": "/slides/image64.jpg",
+      "url_button": "#Empresa"
     }
   ]
 }

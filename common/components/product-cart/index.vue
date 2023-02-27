@@ -2,13 +2,12 @@
   <figure class="flex items-center mb-4 leading-5 shadow-sm rounded bg-white border border-gray-200">
 		<div>
 			<div class="block relative w-20 h-20 rounded p-1 border border-gray-200">
-				<img width="70" height="70" src="images/items/1.jpg" alt="Title">
-				<span class="absolute -top-2 -right-2 w-6 h-6 text-sm text-center flex items-center justify-center text-white bg-gray-400 rounded-full"> 1 </span>
+				<img width="70" height="70" src="/images/image-disabled.jpg" alt="Title">
 			</div>
 		</div>
 		<figcaption class="ml-3">
-			<p> GoPRO Action Camera <br> Model: G-200 </p>
-			<p class="mt-1 text-gray-400"> Total: $12.99 </p>
+			<p>Sample</p>
+			<p class="mt-1 text-gray-400"> Total: Bs 0.00 </p>
       <QuantityInput :modelValue="props.product.quantity" @update:modelValue="changeQuantity" :max="quantityLimit"></QuantityInput>
 		</figcaption>
 	</figure>

@@ -32,8 +32,20 @@ export default defineNuxtConfig({
         ]
       }
     ],
+    '@nuxt/image-edge',
     '@nuxt/content'
   ],
+  image: {
+    presets: {
+      avatar: {
+        modifiers: {
+          format: 'jpg',
+          width: 700,
+          height: 700
+        }
+      }
+    }
+  },
   runtimeConfig: {
     public: {
       VITE_WHATSAPP_BASE_URL: process.env.VITE_WHATSAPP_BASE_URL

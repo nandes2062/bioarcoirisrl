@@ -22,11 +22,11 @@
       src="/images/image67.jpg"
       class="w-full h-full absolute inset-0 object-cover object-bottom"
     />
-    <div class="w-full h-full absolute inset-0 object-cover lg:object-bottom bg-gradient-to-t from-transparent via-amber-900 to-transparent opacity-50">
+    <div class="w-full h-full absolute inset-0 object-cover lg:object-bottom bg-gradient-to-t from-transparent via-black to-transparent opacity-50">
     </div>
   </div>
   <!-- Contact -->
-  <div class="container mx-auto px-6 my-12 text-base">
+  <div class="container mx-auto px-6 my-20 text-base">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-4xl mx-auto">
       <div>
         <b>Información de contacto: </b>

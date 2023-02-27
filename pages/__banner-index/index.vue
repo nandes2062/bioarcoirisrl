@@ -1,5 +1,5 @@
 <template src="./BannerIndex.html"></template>
-<script>
+<script lang="ts">
 import { defineComponent } from 'vue'
 import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
@@ -12,6 +12,14 @@ export default defineComponent({
     Pagination,
     Navigation,
   }
+})
+</script>
+<script setup lang="ts">
+// bindings
+const props = withDefaults(defineProps<{
+  slides: any
+}>(), {
+  slides: []
 })
 </script>
 <style>
