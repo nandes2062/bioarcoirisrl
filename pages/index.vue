@@ -30,7 +30,7 @@
             <b class="text-6xl font-heading">28</b>
             <span class="text-xs">asociados</span>
           </div>
-          <nuxt-img preset="avatar" src="/images/image23.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60" />
+          <img preset="avatar" src="/images/image23.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60" />
         </div>
         <div class="bg-black relative w-full md:w-auto md:flex-1 flex items-center justify-center h-72 font-heading text-white uppercase tracking-widest hover:opacity-90">
           <div class="relative z-10 flex flex-col items-center">
@@ -38,7 +38,7 @@
             <b class="text-6xl font-heading">49</b>
             <span class="text-xs">asociados</span>
           </div>
-          <nuxt-img preset="avatar" src="/images/image58.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60" />
+          <img preset="avatar" src="/images/image58.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60" />
         </div>
         <div class="bg-black relative w-full md:w-auto md:flex-1 flex items-center justify-center h-72 font-heading text-white uppercase tracking-widest hover:opacity-90">
           <div class="relative z-10 flex flex-col items-center">
@@ -46,7 +46,7 @@
             <b class="text-6xl font-heading">23</b>
             <span class="text-xs">asociados</span>
           </div>
-          <nuxt-img preset="avatar" src="/images/image22.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60" />
+          <img preset="avatar" src="/images/image22.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60" />
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 <section class="bg bg-green-500 relative overflow-hidden">
   <Carousel :autoplay="4000" :wrap-around="true">
     <Slide v-for="(slide, id) in slides" :key="id">
-      <nuxt-img class="absolute w-full h-full object-cover object-center top-auto bottom-auto" :src="slide.image" :alt="slide.title"></nuxt-img>
+      <img class="absolute w-full h-full object-cover object-center top-auto bottom-auto" :src="slide.image" :alt="slide.title"></img>
       <div class="absolute w-full h-full bg-gradient-to-r to-green-500 via-transparent from-amber-800 opacity-40"></div>
       <div class="relative container max-w-screen-xl mx-auto px-4">
         <div class="pl-5 py-10 sm:py-20">
