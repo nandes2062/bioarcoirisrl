@@ -9,7 +9,10 @@ export default defineNuxtConfig({
       ]
     }
   },
-  css: ['~/common/styles/main.css'],
+  css: [
+    '~/common/styles/main.css',
+    '~/common/styles/github-markdown.css'
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},
