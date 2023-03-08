@@ -18,7 +18,6 @@
         <!-- breadcrumbs end -->
       </div><!-- /.container -->
     </section>
-    <p>{{ data }}</p>
     <ContentDoc class="container mx-auto max-w-screen-lg px-5 py-20 markdown-body" />
   </div>
 </template>

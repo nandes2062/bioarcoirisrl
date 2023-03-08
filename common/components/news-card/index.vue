@@ -14,17 +14,14 @@
             <nuxt-link :to="props.to" class="hover:text-green-600">
               {{ props.title }}
             </nuxt-link>
-            <div class="flex flex-wrap items-center space-x-2 mb-2">
-              <img src="images/misc/stars-active.svg" alt="" />
+            <!-- <div class="flex flex-wrap items-center space-x-2 mb-2">
               <b class="text-gray-300">•</b>
               <span class="ml-1 text-yellow-500">9.3</span>
-            </div>
+            </div> -->
             <p class="text-gray-500 mb-2">
-              The largest Canon Camera display yet. Electrical heart sensor. Re-engineered
-              Digital Crown with haptic feedback. Entirely familiar, yet completely
-              redesigned
+              {{ props.description }}
             </p>
-            <p class="space-y-2">
+            <!-- <p class="space-y-2">
               <span
                 class="inline-block px-3 text-sm py-1 border border-gray-300 text-gray-400 rounded-full"
               >
@@ -45,7 +42,7 @@
               >
                 Original
               </span>
-            </p>
+            </p> -->
           </div>
         </div>
         <!-- col.// -->
