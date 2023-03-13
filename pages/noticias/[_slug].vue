@@ -10,7 +10,7 @@
             <ArrowIcon class="transform rotate-90 w-5 h-5 ml-3"></ArrowIcon>
           </li>
           <li class="inline-flex items-center" aria-current="page">
-            <nuxt-link class="text-gray-600 hover:text-green-600" to="/noticias">Noticias</nuxt-link> 
+            <button type="button" class="text-gray-600 hover:text-green-600" @click="back">Noticias</button>
             <ArrowIcon class="transform rotate-90 w-5 h-5 ml-3"></ArrowIcon>
           </li>
           <li class="inline-flex items-center"> {{ data.title }} </li>
@@ -24,7 +24,11 @@
 
 <script setup lang="ts">
 const { path } = useRoute()
+const router = useRouter()
 const { data } = await useAsyncData(`content-${path}`, () => {
   return queryContent().where({ _path: path }).only(['title']).findOne()
 })
+function back () {
+  router.go(-1)
+}
 </script>
