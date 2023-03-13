@@ -39,18 +39,22 @@ export default defineNuxtConfig({
     '@nuxt/content'
   ],
   generate: {
-    async routes () {
-      const { $content } = require('@nuxt/content')
-      const catalogTotal = await $content('noticias').fetch()
-      const totalItems = catalogTotal.length
-      const totalPages = Math.ceil(totalItems / 4)
-      const arrayPages = []
-      for (let i = 0; i < totalPages; i++) {
-        arrayPages[i] = '/noticias/p/'+ (i + 1)
-      }
-      console.log('sdds: ', arrayPages)
-      return arrayPages
-    }
+    routes: [
+      '/noticias/p/:slug',
+      '/noticias/:slug'
+    ]
+    // async routes () {
+    //   const { $content } = require('@nuxt/content')
+    //   const catalogTotal = await $content('noticias').fetch()
+    //   const totalItems = catalogTotal.length
+    //   const totalPages = Math.ceil(totalItems / 4)
+    //   const arrayPages = []
+    //   for (let i = 0; i < totalPages; i++) {
+    //     arrayPages[i] = '/noticias/p/'+ (i + 1)
+    //   }
+    //   console.log('sdds: ', arrayPages)
+    //   return arrayPages
+    // }
   },
   image: {
     presets: {
