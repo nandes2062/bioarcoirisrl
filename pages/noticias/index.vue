@@ -97,5 +97,8 @@
 </template>
 
 <script setup lang="ts">
-await navigateTo({ path: '/noticias/p/1' })
+const router = useRouter()
+onMounted(() => {
+  router.push('/noticias/p/1')
+})
 </script>
