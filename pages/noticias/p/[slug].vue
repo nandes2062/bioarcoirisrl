@@ -105,7 +105,7 @@ const router = useRouter()
 const page = ref(parseInt(route.params.slug as string))
 let { data: newsReponse } = await useAsyncData("noticias", async () => {
   const newsTotal = await queryContent<ProductContent>("/noticias/").find()
-  const itemsForPage = 2
+  const itemsForPage = 4
   const totalItems = newsTotal.length
   const totalPages = Math.ceil(totalItems / itemsForPage)
   const limitBefore = (page.value - 1) * itemsForPage
