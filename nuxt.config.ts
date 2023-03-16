@@ -40,21 +40,20 @@ export default defineNuxtConfig({
   ],
   generate: {
     routes: [
-      '/noticias/p/:slug',
-      '/noticias/:slug'
+      '/noticias/:[slug]'
     ]
-    // async routes () {
-    //   const { $content } = require('@nuxt/content')
-    //   const catalogTotal = await $content('noticias').fetch()
-    //   const totalItems = catalogTotal.length
-    //   const totalPages = Math.ceil(totalItems / 4)
-    //   const arrayPages = []
-    //   for (let i = 0; i < totalPages; i++) {
-    //     arrayPages[i] = '/noticias/p/'+ (i + 1)
-    //   }
-    //   console.log('sdds: ', arrayPages)
-    //   return arrayPages
-    // }
+  },
+  content: {
+    sources: {
+      github: {
+        prefix: '/noticia', // Prefix for routes used to query contents
+        driver: 'github', // Driver used to fetch contents (view unstorage documentation)
+        repo: "nandes2062/bioarcoirisrl",
+        branch: "master",
+        dir: "content", // Directory where contents are located. It could be a subdirectory of the repository.
+        // Imagine you have a blog inside your content folder. You can set this option to `content/blog` with the prefix option to `/blog` to avoid conflicts with local files.
+      },
+    }
   },
   image: {
     presets: {
