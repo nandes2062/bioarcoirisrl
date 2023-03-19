@@ -18,17 +18,36 @@
         <!-- breadcrumbs end -->
       </div><!-- /.container -->
     </section>
-    <ContentDoc class="container mx-auto max-w-screen-lg px-5 py-20 markdown-body" />
+    <ContentRenderer class="container mx-auto max-w-screen-lg px-5 py-20 markdown-body" :value="data">
+      <!-- render rich text from document
+      <MarkdownRenderer :value="data.article" /> -->
+      <!-- display if document content is empty -->
+      <template #empty>
+        <p>No content found.</p>
+      </template>
+    </ContentRenderer>
   </div>
 </template>
 
 <script setup lang="ts">
 const { path } = useRoute()
 const router = useRouter()
-const { data } = await useAsyncData(`content-${path}`, () => {
-  return queryContent().where({ _path: path }).only(['title']).findOne()
+const { data } = await useAsyncData(`content-${path}`, async () => {
+  return await queryContent().where({ _path: path }).findOne()
 })
 function back () {
   router.go(-1)
 }
+// set the meta
+useHead({
+  title: data.value.title,
+  meta: [
+    { name: "description", content: data.value.description },
+    {
+      hid: "og:image",
+      property: "og:image",
+      // content: `https://site.com/${data.value.article.img}`,
+    },
+  ],
+});
 </script>

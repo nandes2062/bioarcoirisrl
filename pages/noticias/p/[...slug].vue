@@ -99,10 +99,13 @@
 <script setup lang="ts">
 import type { MarkdownParsedContent } from '@nuxt/content/dist/runtime/types'
 import NewsCard from "@/common/components/news-card/index.vue";
+definePageMeta({
+  key: (route) => route.fullPath,
+})
 interface ProductContent extends MarkdownParsedContent {}
 const route = useRoute()
 const router = useRouter()
-const page = ref(parseInt(route.params._slug as string))
+const page = ref(parseInt(route.params['...slug'] as string))
 let { data: newsReponse } = await useAsyncData("noticia", async () => {
   const newsTotal = await queryContent<ProductContent>("/noticia/").find()
   const itemsForPage = 4
@@ -122,7 +125,7 @@ function handlePage () {
   if (page.value === 1) {
     router.push('/noticias')
   } else if (page.value > newsReponse.value.totalPages) {
-    page.value = parseInt(route.params.slug as string)
+    page.value = parseInt(route.params['...slug'] as string)
   } else {
     router.push('/noticias/' + page.value)
   }

@@ -35,37 +35,32 @@ export default defineNuxtConfig({
         ]
       }
     ],
-    '@nuxt/image-edge',
     '@nuxt/content'
   ],
   generate: {
     routes: [
-      '/noticias/:[slug]'
+      '/noticias/p/:[...slug]'
     ]
   },
   content: {
-    sources: {
-      github: {
-        prefix: '/noticia', // Prefix for routes used to query contents
-        driver: 'github', // Driver used to fetch contents (view unstorage documentation)
-        repo: "nandes2062/bioarcoirisrl",
-        branch: "master",
-        dir: "content", // Directory where contents are located. It could be a subdirectory of the repository.
-        // Imagine you have a blog inside your content folder. You can set this option to `content/blog` with the prefix option to `/blog` to avoid conflicts with local files.
-      },
-    }
-  },
-  image: {
-    presets: {
-      avatar: {
-        modifiers: {
-          format: 'jpg',
-          width: 700,
-          height: 700
-        }
+    markdown: {
+      toc: {
+        depth: 5,
+        searchDepth: 5
       }
     }
   },
+  // nitro: {
+  //   server
+  //   routeRules: {
+  //     '/noticia/**': { static: true }
+  //   }
+  // },
+  // nitro: {
+  //   routeRules: {
+  //     '/noticia/**': { static: false }
+  //   }
+  // },
   runtimeConfig: {
     public: {
       VITE_WHATSAPP_BASE_URL: process.env.VITE_WHATSAPP_BASE_URL
