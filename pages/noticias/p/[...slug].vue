@@ -52,43 +52,6 @@
             </button>
           </div>
         </main>
-        <!-- col.// -->
-        <!-- <aside class="md:w-1/3 lg:w-1/4 px-4"> -->
-          <!-- filter wrap -->
-
-          <!-- <a
-            class="md:hidden mb-5 w-full text-center px-4 py-2 inline-block text-lg text-gray-700 bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100 hover:text-green-600"
-            href="#"
-          >
-            Filter by
-          </a> -->
-
-          <!-- <div class="block px-6 py-4 border border-gray-200 bg-white rounded shadow-sm">
-            <h3 class="font-semibold mb-2">Categorias</h3>
-
-            <ul class="text-gray-500 space-y-1">
-              <li>
-                <a class="hover:text-green-600 hover:underline" href="#">Electronics </a>
-              </li>
-              <li>
-                <a class="hover:text-green-600 hover:underline" href="#">Watches </a>
-              </li>
-              <li>
-                <a class="hover:text-green-600 hover:underline" href="#">Cinema </a>
-              </li>
-              <li>
-                <a class="hover:text-green-600 hover:underline" href="#">Clothes </a>
-              </li>
-              <li>
-                <a class="hover:text-green-600 hover:underline" href="#">Home items </a>
-              </li>
-              <li>
-                <a class="hover:text-green-600 hover:underline" href="#">Smartwatches </a>
-              </li>
-            </ul>
-          </div> -->
-          <!-- filter wrap -->
-        <!-- </aside> -->
       </div>
       <!-- grid.// -->
     </div>
@@ -99,16 +62,17 @@
 <script setup lang="ts">
 import type { MarkdownParsedContent } from '@nuxt/content/dist/runtime/types'
 import NewsCard from "@/common/components/news-card/index.vue";
+import { useNoticias } from '../noticias.composable'
 definePageMeta({
   key: (route) => route.fullPath,
 })
 interface ProductContent extends MarkdownParsedContent {}
 const route = useRoute()
 const router = useRouter()
-const page = ref(parseInt(route.params['...slug'] as string))
-let { data: newsReponse } = await useAsyncData("noticia", async () => {
-  const newsTotal = await queryContent<ProductContent>("/noticia/").find()
-  const itemsForPage = 4
+const page = ref(parseInt(route.params.slug[0] as string))
+let { data: newsReponse } = await useAsyncData("noticias", async () => {
+  const newsTotal = await queryContent<ProductContent>("/noticias/").only(['title', 'description', 'tags', '_path', 'img']).find()
+  const itemsForPage = 5
   const totalItems = newsTotal.length
   const totalPages = Math.ceil(totalItems / itemsForPage)
   const limitBefore = (page.value - 1) * itemsForPage
@@ -116,30 +80,8 @@ let { data: newsReponse } = await useAsyncData("noticia", async () => {
   const news = newsTotal.filter((v, k) => k >= limitBefore && k <= limitAfter)
   return {
     news,
-    // newsTotal,
     totalPages
   }
 }) as object
-
-function handlePage () {
-  if (page.value === 1) {
-    router.push('/noticias')
-  } else if (page.value > newsReponse.value.totalPages) {
-    page.value = parseInt(route.params['...slug'] as string)
-  } else {
-    router.push('/noticias/' + page.value)
-  }
-}
-
-function pageBack () {
-  if (page.value > 0 && page.value !== 1) {
-    router.push('/noticias/' + (page.value - 1))
-  }
-}
-
-function pageNext () {
-  if (newsReponse.value?.totalPages > page.value) {
-    router.push('/noticias/' + (page.value + 1))
-  }
-}
+const { handlePage, pageNext, pageBack } = useNoticias({ route, router, newsReponse, page })
 </script>

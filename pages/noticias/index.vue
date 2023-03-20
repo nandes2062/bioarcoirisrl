@@ -1,46 +1,4 @@
 <!-- ./pages/noticias/index.vue -->
-
-<script setup lang="ts">
-import type { MarkdownParsedContent } from '@nuxt/content/dist/runtime/types'
-import NewsCard from '@/common/components/news-card/index.vue'
-interface ProductContent extends MarkdownParsedContent {}
-definePageMeta({
-  key: (route) => route.fullPath,
-});
-
-// get tag query
-const {
-  query: { tags },
-} = useRoute();
-
-const filter = ref(tags?.split(','));
-
-// set meta for page
-useHead({
-  title: "All articles",
-  meta: [{ name: "description", content: "Here's a list of all my great articles" }],
-})
-const route = useRoute()
-const page = ref(parseInt(route.params['[...slug]'] as string))
-  let { data: newsReponse } = await useAsyncData("noticias", async () => {
-    const newsTotal = await queryContent<ProductContent>("/noticias/").find()
-    const itemsForPage = 4
-    const totalItems = newsTotal.length
-    const totalPages = Math.ceil(totalItems / itemsForPage)
-    const totalPagesPath: string[] = [...Array(totalPages).keys()].map((v) => {
-      return '/noticias/p/' + (v + 1)
-    })
-    const limitBefore = (page.value - 1) * itemsForPage
-    const limitAfter = ((page.value - 1) * itemsForPage) + (itemsForPage - 1)
-    const news = newsTotal.filter((v, k) => k >= limitBefore && k <= limitAfter)
-    return {
-      news,
-      // newsTotal,
-      totalPages,
-      totalPagesPath
-    }
-  }) as object
-</script>
 <template>
   <section class="py-12">
     <div class="container max-w-screen-xl mx-auto px-4">
@@ -70,26 +28,21 @@ const page = ref(parseInt(route.params['[...slug]'] as string))
             <!-- Default list slot -->
             <template v-slot="{ list }">
               <nuxt-link class="hidden" v-for="item in list" :to="item._path">{{ item.title }}</nuxt-link>
-              <!-- <NewsCard
-                v-for="item in list"
-                :title="item.title"
-                :description="item.description"
-                :to="item._path"
-              ></NewsCard> -->
-              <!-- <ul class="article-list"> -->
-                <!-- <li v-for="item in list" :key="article._path" class="article-item"> -->
-                <!-- </li> -->
-              <!-- </ul> -->
             </template>
 
             <!-- Not found slot to display message when no content us is found -->
             <template #not-found>
-              <p>No articles found.</p>
+              <p>No hay articulos para mostrar.</p>
             </template>
           </ContentList>
-          <nuxt-link v-for="item in newsReponse.totalPagesPath" :to="item">{{ item }}</nuxt-link>
-          
-          <!-- <div class="flex justify-center pb-14">
+          <nuxt-link class="hidden" v-for="item in newsReponse.totalPagesPath" :to="item">{{ item }}</nuxt-link>
+          <NewsCard
+            v-for="item in newsReponse.news"
+            :title="item.title"
+            :description="item.description"
+            :to="item._path"
+          ></NewsCard>
+          <div class="flex justify-center pb-14">
             <button
               @click="pageBack"
               class="border rounded-lg flex justify-center items-center px-4"
@@ -123,48 +76,50 @@ const page = ref(parseInt(route.params['[...slug]'] as string))
                 ></path>
               </svg>
             </button>
-          </div> -->
+          </div>
         </main>
-        <!-- col.// -->
-        <!-- <aside class="md:w-1/3 lg:w-1/4 px-4"> -->
-          <!-- filter wrap -->
-
-          <!-- <a
-            class="md:hidden mb-5 w-full text-center px-4 py-2 inline-block text-lg text-gray-700 bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100 hover:text-green-600"
-            href="#"
-          >
-            Filter by
-          </a> -->
-
-          <!-- <div class="block px-6 py-4 border border-gray-200 bg-white rounded shadow-sm">
-            <h3 class="font-semibold mb-2">Categorias</h3>
-
-            <ul class="text-gray-500 space-y-1">
-              <li>
-                <a class="hover:text-green-600 hover:underline" href="#">Electronics </a>
-              </li>
-              <li>
-                <a class="hover:text-green-600 hover:underline" href="#">Watches </a>
-              </li>
-              <li>
-                <a class="hover:text-green-600 hover:underline" href="#">Cinema </a>
-              </li>
-              <li>
-                <a class="hover:text-green-600 hover:underline" href="#">Clothes </a>
-              </li>
-              <li>
-                <a class="hover:text-green-600 hover:underline" href="#">Home items </a>
-              </li>
-              <li>
-                <a class="hover:text-green-600 hover:underline" href="#">Smartwatches </a>
-              </li>
-            </ul>
-          </div> -->
-          <!-- filter wrap -->
-        <!-- </aside> -->
       </div>
       <!-- grid.// -->
     </div>
     <!-- container .// -->
   </section>
 </template>
+<script setup lang="ts">
+import type { MarkdownParsedContent } from '@nuxt/content/dist/runtime/types'
+import NewsCard from '@/common/components/news-card/index.vue'
+import { useNoticias } from './noticias.composable'
+interface ProductContent extends MarkdownParsedContent {}
+definePageMeta({
+  key: (route) => route.fullPath,
+});
+
+// get tag query
+const {
+  query: { tags },
+} = useRoute();
+
+const filter = ref(tags?.split(','));
+
+
+definePageMeta({
+  key: (route) => route.fullPath,
+})
+interface ProductContent extends MarkdownParsedContent {}
+const route = useRoute()
+const router = useRouter()
+const page = ref(1)
+let { data: newsReponse } = await useAsyncData("noticias", async () => {
+  const newsTotal = await queryContent<ProductContent>("/noticias/").only(['title', 'description', 'tags', '_path', 'img']).find()
+  const itemsForPage = 5
+  const totalItems = newsTotal.length
+  const totalPages = Math.ceil(totalItems / itemsForPage)
+  const limitBefore = (page.value - 1) * itemsForPage
+  const limitAfter = ((page.value - 1) * itemsForPage) + (itemsForPage - 1)
+  const news = newsTotal.filter((v, k) => k >= limitBefore && k <= limitAfter)
+  return {
+    news,
+    totalPages
+  }
+}) as object
+const { handlePage, pageNext, pageBack } = useNoticias({ route, router, newsReponse, page })
+</script>

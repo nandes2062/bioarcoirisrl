@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   },
   components: {
     global: true,
-    dirs: ['~/common/icons']
+    dirs: ['~/common/icons', '~/components']
   },
   modules: [
     [
@@ -43,6 +43,14 @@ export default defineNuxtConfig({
     ]
   },
   content: {
+    highlight: {
+      theme: {
+        // Default theme (same as single string)
+        default: 'material-palenight',
+        // Theme used if `html.dark`
+        dark: 'github-dark',
+      }
+    },
     markdown: {
       toc: {
         depth: 5,

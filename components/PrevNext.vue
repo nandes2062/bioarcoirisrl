@@ -10,13 +10,13 @@ defineProps(["prev", "next"]);
 <template>
   <ul class="prev-next-cont">
     <li class="link-item prev">
-      <NuxtLink v-if="prev" :to="prev._path">
+      <NuxtLink v-if="prev && prev._path.split('/')[1] === 'noticias'" :to="prev._path">
         <ArrowLeftIcon class="icon stroke" />
         <span> {{ prev.title }} </span>
       </NuxtLink>
     </li>
     <li class="link-item next">
-      <NuxtLink v-if="next" :to="next._path">
+      <NuxtLink v-if="next && next._path.split('/')[1] === 'noticias'" :to="next._path">
         <span> {{ next.title }} </span>
         <ArrowRightIcon class="icon stroke" />
       </NuxtLink>
