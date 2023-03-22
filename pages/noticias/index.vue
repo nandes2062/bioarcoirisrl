@@ -10,7 +10,7 @@
       <div class="flex flex-col md:flex-row -mx-4 items-center justify-center">
         <!-- col.// -->
         <main class="md:w-2/3 lg:w-3/4 px-3">
-          <Tags />
+          <!-- <Tags /> -->
 
           <!-- Render list of all articles in ./content/noticias using `path` -->
           <!-- Provide only defined fieldsin the `:query` prop -->

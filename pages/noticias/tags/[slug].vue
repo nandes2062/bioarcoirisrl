@@ -29,7 +29,7 @@ useHead({
       </div>
     </header>
     <section class="page-section">
-      <Tags />
+      <!-- <Tags /> -->
       <!-- Render list of all articles in ./content/blog using `path` -->
       <!-- Provide only defined fieldsin the `:query` prop -->
       <ContentList

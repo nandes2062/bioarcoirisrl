@@ -1,7 +1,9 @@
 <template src="./Header.html"></template>
 <script setup lang="ts">
   import ShowCartRight from './show-cart-right/index.vue'
+  import ShowMenuHeader from './show-menu-header/index.vue'
   import { cartStore } from '~~/store/cart'
+  const openMenuHeader = ref(false)
   const store = cartStore()
   // computed
   const notifyQuantity = computed(() => {
@@ -15,6 +17,14 @@
   }
   function closeCart () {
     store.openCart = false
+    document.body.style.overflowY = 'auto'
+  }
+  function shownMenu () {
+    openMenuHeader.value = true
+    document.body.style.overflowY = 'hidden'
+  }
+  function closeMenu () {
+    openMenuHeader.value = false
     document.body.style.overflowY = 'auto'
   }
 </script>
