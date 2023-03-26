@@ -116,9 +116,11 @@ let { data: newsReponse } = await useAsyncData("noticias", async () => {
   const limitBefore = (page.value - 1) * itemsForPage
   const limitAfter = ((page.value - 1) * itemsForPage) + (itemsForPage - 1)
   const news = newsTotal.filter((v, k) => k >= limitBefore && k <= limitAfter)
+  const totalPagesPath = Array.from(Array(totalPages).keys()).map((v, k) => { return '/noticias/p/' + (k + 1) + '/'})
   return {
     news,
-    totalPages
+    totalPages,
+    totalPagesPath
   }
 }) as object
 const { handlePage, pageNext, pageBack } = useNoticias({ route, router, newsReponse, page })

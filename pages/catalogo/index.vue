@@ -23,6 +23,7 @@
             <p>No hay articulos para mostrar.</p>
           </template>
         </ContentList>
+        <nuxt-link class="hidden" v-for="item in data.totalPagesPath" :to="item">{{ item }}</nuxt-link>
         <div class="mb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <Card
             v-for="item in data.products"
@@ -70,13 +71,16 @@
   </div>
 </template>
 <script setup lang="ts">
-  import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
+  import type { MarkdownParsedContent } from '@nuxt/content/dist/runtime/types'
   import Card from '@/common/components/card/index.vue'
   import { cartStore } from '@/store/cart'
   import { useCatalogo } from './catalogo.composable'
-  interface ProductContent extends ParsedContent {
+  interface ProductContent extends MarkdownParsedContent {
     quantity: number
   }
+  definePageMeta({
+    key: (route) => route.fullPath,
+  })
   const cartData = cartStore()
   // get tag query
   const {
@@ -101,9 +105,11 @@
     const limitBefore = (page.value - 1) * itemsForPage
     const limitAfter = ((page.value - 1) * itemsForPage) + (itemsForPage - 1)
     const products = prodTotal.filter((v, k) => k >= limitBefore && k <= limitAfter)
+    const totalPagesPath = Array.from(Array(totalPages).keys()).map((v, k) => { return '/catalogo/p/' + (k + 1) + '/' })
     return {
       products,
-      totalPages
+      totalPages,
+      totalPagesPath
     }
   })
 

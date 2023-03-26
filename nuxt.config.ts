@@ -39,7 +39,7 @@ export default defineNuxtConfig({
   ],
   generate: {
     routes: [
-      '/noticias/p/:[...slug]'
+      // '/noticias/p/:[...slug]'
     ]
   },
   content: {
